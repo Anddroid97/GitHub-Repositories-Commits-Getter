@@ -1,0 +1,18 @@
+{
+    "name": "anddroid97/git-hub-commits-getter",
+    "description": "This package can be used for getting commits info of any repository on GitHub, works with GitHub Api",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Anddroid97",
+            "email": "litkovskiy97@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Anddroid97\\CommitsGetter\\" : "src/"
+        }
+    }
+}
