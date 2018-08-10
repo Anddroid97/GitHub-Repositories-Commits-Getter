@@ -11,7 +11,7 @@ composer require guzzlehttp/guzzle:~6.0
 Usage
 -------
 
-1.Go into Anddroid97\CommitsGetter and make your Model like in example:
+1.Go into Anddroid97\CommitsGetter and make your Model like in example (model depends of what you need to get autor,hash,date or other info of commit):
 
 ```php
 namespace Anddroid97\CommitsGetter\TestModel;
