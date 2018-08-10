@@ -2,12 +2,11 @@
 
 namespace Anddroid97\CommitsGetter;
 
-use Anddroid97\CommitsGetter\CommitsGetterInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Anddroid97\CommitsGetter\TestModel\CommitInfo;
 
-class CommitsGetter implements CommitsGetterInterface
+class CommitsGetter implements  CommitsGetterInterface
 {
     private $repositoryName;
 
@@ -19,7 +18,7 @@ class CommitsGetter implements CommitsGetterInterface
     public function fetchCommitsList(): ?array
     {
         $client = new Client();
-        $endpoint = 'https://api.github.com/repos/' . $this->repositoryName . '/commits';
+        $endpoint = 'https://api.github.com/repos/'.$this->repositoryName.'/commits';
 
         try {
             $response = $client->request('GET', $endpoint);
@@ -42,6 +41,7 @@ class CommitsGetter implements CommitsGetterInterface
             $commitObj->setMessage($commit['commit']['message']);
             $filteredCommitsRepository[] = $commitObj;
         }
+
 
         return $filteredCommitsRepository;
     }

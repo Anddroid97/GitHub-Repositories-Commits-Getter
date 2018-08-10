@@ -7,7 +7,7 @@ interface CommitsGetterInterface
     /**
      * CommitGetterInterface constructor.
      *
-     * Get repository name.Inside the implemented class you must instance your model,
+     * Get repository author/repositoryName .Inside the implemented class you must instance your model,
      * which has properties of what kind of info from commit you need( e.g $author, $hash)
      * with setters and getters methods
      * CommitInfo model  in TestModel directory given as an example
