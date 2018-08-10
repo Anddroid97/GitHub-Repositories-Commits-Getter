@@ -42,7 +42,6 @@ class CommitsGetter implements  CommitsGetterInterface
             $filteredCommitsRepository[] = $commitObj;
         }
 
-
         return $filteredCommitsRepository;
     }
 
